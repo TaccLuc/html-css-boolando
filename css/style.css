@@ -17,7 +17,7 @@
     margin: 0 auto;
 }
 
-.my-col{
+.my-row{
     display: flex;
 }
 
@@ -29,16 +29,39 @@
     width: calc((100% /  12) * 6);
 }
 
+.m-col{
+    width: calc(((100% / 12) * 4) - 20px);
+}
+
+
+.discount{
+    background-color: red;
+    padding: 3px 5px;
+    color: white;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.susteinable{
+    background-color: green;
+    padding: 3px 5px;
+    color: white;
+    font-size: 0.8em;
+}
 /* 
     HEADER
 */
 
 header{
     background-color: #FF6900;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-header .my-col{
-    padding: 10px;
+header .my-row{
+    padding: 15px 0;
     align-items: center;
 }
 
@@ -64,4 +87,63 @@ header .h-big-col{
 
 header .h-big-col img{
     width: 20%;
+}
+
+/* 
+    MAIN
+*/
+
+.product{
+    position: relative;
+}
+
+.product-labels{
+    position: absolute;
+    bottom: 40px;
+}
+
+.wishlist{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;    
+    font-size: 1.2em;
+}
+
+main{
+    margin-top: 110px;
+}
+
+main .my-row{
+    margin: 0 -10px;
+    flex-wrap: wrap;
+}
+
+main .m-col{
+    margin: 0 10px 20px 10px;
+}
+
+main .m-col > div img{
+    width: 100%;
+}
+
+main .m-col > div img:nth-of-type(2){
+    display: none;
+}
+
+
+main .m-col h5:first-of-type{
+    font-weight: 100;
+}
+
+main .m-col h5 span:first-of-type{
+    color:red;
+}
+
+main .m-col h5 span:last-of-type{
+    text-decoration: line-through;
 }
