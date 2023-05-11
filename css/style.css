@@ -12,6 +12,10 @@
     GENERAL
 */
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .container{
     max-width: 1000px;
     margin: 0 auto;
@@ -33,6 +37,9 @@
     width: calc(((100% / 12) * 4) - 20px);
 }
 
+.f-col{
+    width: calc((100% / 12) * 6);
+}
 
 .discount{
     background-color: red;
@@ -137,7 +144,7 @@ main .m-col > div img:nth-of-type(2){
 
 
 main .m-col h5:first-of-type{
-    font-weight: 100;
+    font-weight: 300;
 }
 
 main .m-col h5 span:first-of-type{
@@ -146,4 +153,41 @@ main .m-col h5 span:first-of-type{
 
 main .m-col h5 span:last-of-type{
     text-decoration: line-through;
+}
+
+/* 
+    FOOTER
+*/
+
+footer{
+    background-color: #212225;
+    color: white;
+}
+
+footer .my-row{
+    padding: 25px 0;
+}
+
+footer .f-col:last-of-type{
+    text-align: right;
+}
+
+footer .f-col:first-of-type h4{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer .f-col:last-of-type h4{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+footer .f-col a{
+    text-decoration: none;
+    color:white;
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+footer .f-col:last-of-type a{
+    font-size: 1.3em;
 }
