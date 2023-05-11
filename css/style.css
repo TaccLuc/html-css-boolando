@@ -55,6 +55,7 @@ body{
     color: white;
     font-size: 0.8em;
 }
+
 /* 
     HEADER
 */
@@ -86,6 +87,10 @@ header .h-small-col a{
     font-weight: 700;
     font-size: small;
     margin-right: 5px;
+}
+
+header .my-row > div:first-of-type a:hover{
+    text-decoration: underline;
 }
 
 header .h-big-col{
@@ -187,6 +192,10 @@ footer{
 
 footer .my-row{
     padding: 25px 0;
+}
+
+footer .my-row > div:first-of-type a:hover{
+    text-decoration: underline;
 }
 
 footer .f-col:last-of-type{
