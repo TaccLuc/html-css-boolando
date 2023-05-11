@@ -134,14 +134,29 @@ main .m-col{
     margin: 0 10px 20px 10px;
 }
 
+main .product-image{
+    position: relative;
+}
+
 main .m-col > div img{
     width: 100%;
 }
 
-main .m-col > div img:nth-of-type(2){
-    display: none;
+main .product-image img:first-of-type{
+    transition: opacity 0.3s ease-in-out;
 }
 
+main .product-image img:last-of-type{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main .product-image > img:first-of-type:hover{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
 
 main .m-col h5:first-of-type{
     font-weight: 300;
