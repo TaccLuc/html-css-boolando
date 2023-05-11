@@ -100,26 +100,6 @@ header .h-big-col img{
     MAIN
 */
 
-.product{
-    position: relative;
-}
-
-.product-labels{
-    position: absolute;
-    bottom: 40px;
-}
-
-.wishlist{
-    position: absolute;
-    right: 0;
-    top: 10px;
-    background-color: white;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;    
-    font-size: 1.2em;
-}
 
 main{
     margin-top: 110px;
@@ -132,6 +112,32 @@ main .my-row{
 
 main .m-col{
     margin: 0 10px 20px 10px;
+}
+
+
+main .product{
+    position: relative;
+}
+
+main .product-labels{
+    position: absolute;
+    bottom: 40px;
+}
+
+main .wishlist{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;    
+    font-size: 1.2em;
+}
+
+main .wishlist:hover{
+    color:red;
 }
 
 main .product-image{
