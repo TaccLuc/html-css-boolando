@@ -7,3 +7,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 
+    GENERAL
+*/
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.my-col{
+    display: flex;
+}
+
+.h-small-col{
+    width: calc((100% /  12) * 3);
+}
+
+.h-big-col{
+    width: calc((100% /  12) * 6);
+}
+
+/* 
+    HEADER
+*/
+
+header{
+    background-color: #FF6900;
+}
+
+header .my-col{
+    padding: 10px;
+    align-items: center;
+}
+
+header .h-small-col{
+    text-align: left;
+}
+
+header .h-small-col:nth-child(3){
+    text-align: right;
+}
+
+header .h-small-col a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: small;
+    margin-right: 5px;
+}
+
+header .h-big-col{
+    text-align: center;
+}
+
+header .h-big-col img{
+    width: 20%;
+}
